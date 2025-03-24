@@ -1,25 +1,39 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button"
+import styles from './page.module.css'
+import github from '/public/icons/github.png';
+import ai from '/public/icons/ai.png';
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'BytePrep',
+}
 
 export default function Home() {
   return (
-    <div>
-      <header>
-        <p>iBuddy</p>
+    <div className="body">
+      <header className={styles.header}>
+        <p>BytePrep</p>
         <div>
           <Button>Sign up</Button>
         </div>
       </header>
-      <section>
-        <p>your personal ai interview coach</p>
-        <p>Become confident for your next technical or behavioural interview using ai.</p>
-        <p>Practice with interview questions tailored to the job description and the company you are interviewing for.</p>
-        <Button>Get started with Google</Button>        
-        <Button>Get started with Github</Button>        
+      <section className={styles.section}>
+        <div className={styles.first}>
+          <Image src={ai} alt="ai" width={30} height={30}/>
+          <p>your personal ai interview coach</p>
+        </div>
+        <p className={styles.second}>Become confident for your next technical or behavioural interview using ai.</p>
+        <p className={styles.third}>Practice with interview questions tailored to the job description and the company you are interviewing for.</p>
+        <div className={styles.signHolder}>
+          <Button className={styles.signButton}>Get started with Google</Button>        
+        </div>
       </section>
-      <footer>
-        <p>Andrew Arochukwu &copy; 2025</p>
-        <p>Github</p>
+      <footer className={styles.footer}>
+        <p className={styles.footerName}>Andrew Arochukwu &copy; 2025</p>
+        <a href="https://github.com/aarochuk/interview_buddy" target="_blank">
+          <Image src={github} alt="github" width={30} height={30}/>
+        </a>
       </footer>
     </div>
   );

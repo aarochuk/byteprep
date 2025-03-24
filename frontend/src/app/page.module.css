@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100..900&display=swap');
+
+.body {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header,
+.footer {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 10vw;
+}
+
+.header>p {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.footer {
+    border-top: 1px solid black;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.section {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first {
+    border: 1px solid black;
+    width: 20em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    justify-content: center;
+    border-radius: 2em;
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+.second {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+}
+
+.signHolder {
+    display: flex;
+    height: 5em;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
