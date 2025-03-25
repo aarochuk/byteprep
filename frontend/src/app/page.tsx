@@ -14,9 +14,6 @@ export default function Home() {
     <div className="body">
       <header className={styles.header}>
         <p>BytePrep</p>
-        <div>
-          <Button>Sign up</Button>
-        </div>
       </header>
       <section className={styles.section}>
         <div className={styles.first}>
