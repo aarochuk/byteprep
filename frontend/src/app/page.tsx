@@ -1,13 +1,12 @@
+'use client';
+
+import { useState } from 'react';
 import Image from "next/image";
 import { Button } from "@/components/ui/button"
 import styles from './page.module.css'
 import github from '/public/icons/github.png';
 import ai from '/public/icons/ai.png';
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'BytePrep',
-}
+import axios from 'axios';
 
 export default function Home() {
   return (
